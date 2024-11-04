@@ -14,27 +14,60 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 90%, 88%); }
   </style>
+
 </head>
 <body>
-  <div class="outer-container" style="background-color: hsl(228, 45%, 44%); display: flex; justify-content: center; align-items: center; height: 100%; width: 100%; margin: .25rem; ">
+  <div class="outer-container" style="background-color:hsl(212, 45%, 89%); ">
     <div class="rectangle" style="background-color: #fff; border-radius: 15px; padding: 1rem; margin-top: 1rem;">
-    <img src="./images/image-qr-code.png" alt="Image Cannot Be Displayed" style="border-radius: 15px; width: 100%; max-width: 300px; height: auto;">
+    <img src="./images/image-qr-code.png" alt="Image Cannot Be Displayed">
     <h1 style="color: #333; font-size: 1.5rem; margin-bottom: 1rem;">Improve your front-end skills by building projects</h1>
     <p style="color: #333; font-size: 1rem; margin-bottom: 1rem;">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
   </div>
 
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">ChefJTaylor</a>.
+  </footer>
+
   <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
   body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    flex: 1;
   }
 
+  img {
+    display: flex;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    flex: 1;
+  }
+
+  .outer-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 80%;
+    max-height: 800px;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
   .rectangle {
     display: flex;
     flex-direction: column;
@@ -42,16 +75,42 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     background-color: #fff;
     border-radius: 15px;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: 375px) {
+    .outer-container {
+      width: 95%;
+      padding: 5px;
+    }
+
+    .rectangle {
+      max-width: 200px;
+      padding: 0.5rem;
+    }
+
+    img {
+      max-width: 200px;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
   }
   </style>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">ChefJTaylor</a>.
-  </div>
 </body>
+</html>
